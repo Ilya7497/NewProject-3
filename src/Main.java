@@ -1,19 +1,19 @@
 public class Main {
     public static void main(String[] args) {
-        int x = 200; // Начальный счёт
-        int y = 1200; // Сумма пополнения
+        int amount = 200; // Начальный счёт
+        int deposit = 1200; // Сумма пополнения
 
-        int z;
-        if (y > 1000) {
-            z = 1;
+        int award;
+        if (deposit > 1000) {
+            award = 1;
         } else {
-            z = 0;
+            award = 0;
         }
 
-        int bonus = y / 100 * z;
+        int bonus = deposit / 100 * award;
 
         System.out.println("Итоговый бонус: " + bonus);
-        System.out.println("Итоговая сумма: " + ((x + y) + bonus));
+        System.out.println("Итоговая сумма: " + ((amount + deposit) + bonus));
 
 
     }
